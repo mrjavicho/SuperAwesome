@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <RootNamespace>SuperAwesome.Common.HttpRequestHelper</RootNamespace>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>Javier Fernando Huamanchumo Arauco</Authors>
+        <Description>Simple HttpRequestService for common rest operations</Description>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+        <TargetFrameworks>net5.0;netstandard2.0;netstandard2.1</TargetFrameworks>
+        <PackageVersion>1.0.1</PackageVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+        <None Include="..\License\license.txt" Pack="true" PackagePath="LICENSE.txt" />
+    </ItemGroup>
+
+</Project>
