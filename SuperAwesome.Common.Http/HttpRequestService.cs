@@ -24,7 +24,7 @@ namespace SuperAwesome.Common.Http
 
         public Task<OperationResult<TResult>> Post<TResult>(string uri, object payload, CancellationToken token)
         {
-            return ExecuteWebRequest<TResult>(RequestType.Get, uri, payload, token);
+            return ExecuteWebRequest<TResult>(RequestType.Post, uri, payload, token);
         }
 
         public Task<OperationResult<TResult>> Put<TResult>(string uri, object payload, CancellationToken token)
@@ -54,6 +54,8 @@ namespace SuperAwesome.Common.Http
              {
                  content = new StringContent("");
              }
+             
+             
              try
              { 
                  HttpResponseMessage responseMessage;
@@ -69,7 +71,7 @@ namespace SuperAwesome.Common.Http
                         responseMessage = await Client.PostAsync(requestUrl, content, token);
                         break;
                     case RequestType.Delete:
-                        responseMessage = await Client.PostAsync(requestUrl, content, token);
+                        responseMessage = await Client.DeleteAsync(requestUrl, token);
                         break;
                     default:
                         throw new ArgumentOutOfRangeException(nameof(requestType), requestType, null);
