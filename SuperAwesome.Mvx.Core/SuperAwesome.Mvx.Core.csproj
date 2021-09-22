@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <RootNamespace>SuperAwesome.Mvx.Forms.Core</RootNamespace>
+        <Authors>Javier Fernando Huamanchumo Arauco</Authors>
+        <Description>A collection of useful classes for mvvm, logging, validations, etc. meant to be used in MvvmCross projects.</Description>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="MvvmCross" Version="8.0.2" />
+        <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+        <None Include="..\License\license.txt" Pack="true" PackagePath="LICENSE.txt" />
+    </ItemGroup>
+</Project>

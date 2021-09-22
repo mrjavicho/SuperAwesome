@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>Javier Fernando Huamanchumo Arauco</Authors>
+        <Description>A collection of useful controls for Xamarin Forms</Description>
+        <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
+        <None Include="..\License\license.txt" Pack="true" PackagePath="LICENSE.txt" />
+    </ItemGroup>
+</Project>
