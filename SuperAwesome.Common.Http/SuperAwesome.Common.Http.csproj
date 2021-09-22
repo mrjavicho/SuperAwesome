@@ -8,6 +8,8 @@
         <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
         <TargetFrameworks>net5.0;netstandard2.0;netstandard2.1</TargetFrameworks>
         <PackageVersion>1.0.1</PackageVersion>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     </PropertyGroup>
 
     <ItemGroup>
